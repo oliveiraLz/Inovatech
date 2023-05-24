@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="questionario.css">
+    <title>questionario</title>
+
+</head>
+<body>
+    <header>
+        <a href="/feed/feed.html">
+        <span class="nav-item" style="position: absolute; top: 0; right: 0; transform: translate(-50%, 50%);">Voltar</span>
+          <div class="imagem">
+            <img src="LOGO.png"  alt="" style="width: 100px;">
+          </div>
+        </a>
+      </header>
+   
+<form id="formulario">
+  <div class="pergunta">
+    <h2>1. Como você avalia o processo de recrutamento e seleção pelo qual você passou?</h2>
+    <input type="radio" name="resposta1" value="Opção 1"> Excelente <br>
+    <input type="radio" name="resposta1" value="Opção 2"> Mais ou menos<br>
+    <input type="radio" name="resposta1" value="Opção 3"> Ruim<br>
+    <button type="button" class="proximo">Próximo</button>
+  </div>
+  <div class="pergunta">
+    <h2>2.Como descreveria o processo de integração e treinamento na empresa?</h2>
+    <input type="radio" name="resposta2" value="Opção 1"> Bastante positivo<br>
+    <input type="radio" name="resposta2" value="Opção 2"> Organizados<br>
+    <input type="radio" name="resposta2" value="Opção 3"> Ruim<br>
+    <button type="button" class="proximo">Próximo</button>
+  </div>
+  <div class="pergunta">
+    <h2>3. Como você avalia a comunicação interna na empresa?</h2>
+    <input type="radio" name="resposta3" value="Opção 1"> Geralmente eficaz<br>
+    <input type="radio" name="resposta3" value="Opção 2"> Demoram a chegar<br>
+    <input type="radio" name="resposta3" value="Opção 3"> Ruim<br>
+    <button type="button" class="proximo">Próximo</button>
+  </div>
+  <div class="pergunta">
+    <h2>4. Como você avalia o ambiente de trabalho e a cultura da empresa?</h2>
+    <input type="radio" name="resposta4" value="Opção 1"> Positivo e acolhedor<br>
+    <input type="radio" name="resposta4" value="Opção 2"> Promove a diversidade e a inclusão<br>
+    <input type="radio" name="resposta4" value="Opção 3"> Ruim<br>
+    <button type="submit">Enviar</button>
+  </div>
+</form>
+    
+   
+      <script>
+        // Capturar o formulário e todas as perguntas
+        const formulario = document.getElementById('formulario');
+        const perguntas = document.getElementsByClassName('pergunta');
+        let perguntaAtual = 0; // Índice da pergunta atual
+      
+        // Ocultar todas as perguntas, exceto a primeira
+        for (let i = 1; i < perguntas.length; i++) {
+          perguntas[i].style.display = 'none';
+        }
+      
+        // Função para exibir a próxima pergunta
+        function exibirProximaPergunta() {
+          perguntas[perguntaAtual].style.display = 'none'; // Ocultar pergunta atual
+      
+          // Verificar se há mais perguntas para exibir
+          if (perguntaAtual < perguntas.length - 1) {
+            perguntaAtual++; // Avançar para a próxima pergunta
+            perguntas[perguntaAtual].style.display = 'block'; // Exibir próxima pergunta
+          } else {
+            // Todas as perguntas foram respondidas,enviar o formulário aqui
+            formulario.submit();
+          }
+        }
+      
+        // Adicionar evento de submit ao formulário
+        formulario.addEventListener('submit', function(event) {
+          event.preventDefault(); // Impedir o envio do formulário
+          exibirProximaPergunta(); // Exibir a próxima pergunta ao enviar o formulário
+        });
+      
+        // Adicionar evento de click nos botões "Próximo"
+        const botoesProximo = document.getElementsByClassName('proximo');
+        for (let i = 0; i < botoesProximo.length; i++) {
+          botoesProximo[i].addEventListener('click', function() {
+            exibirProximaPergunta(); // Exibir a próxima pergunta ao clicar no botão "Próximo"
+          });
+        }
+      </script>
+      
+    
+</body>
+</html>

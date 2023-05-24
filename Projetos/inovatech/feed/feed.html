@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="feed.css">
+    <title>Feedback</title>
+
+</head>
+<body>
+  <header>
+    <a href="/dashboard/dashboard.html">
+    <span class="nav-item" style="position: absolute; top: 0; right: 0; transform: translate(-50%, 50%);">Home</span>
+      <div class="imagem">
+        <img src="LOGO.png"  alt="" style="width: 100px;">
+      </div>
+    </a>
+  </header>
+  
+  <div class="Texto-titulo">
+    <h1>
+      REGISTRE O SEU</h1>
+      <h2>FEEDBACK</h2> 
+      <p>Seu feedback é muito importante para nossa EVOLUÇÃO!</p>
+  </div>
+        
+        <div class="imagem-container">
+            <img class="img" src="feedback.png" alt="">
+             </div>
+              <div class="botoes-container">
+             <button class="botao">Anônimo</button>
+           <button class="botao">Individual</button>
+        </div>
+        
+        <div class="container">
+          <div class="row">
+            <div class="caixa caixa-1">
+              <span>RECRUTAMENTO</span>
+              <div class="botoes-container">
+                <a href="questionario/questionario.html">
+                <button class="iniciar">Iniciar</button>
+                </a>
+              </div>
+            </div>
+            <div class="caixa caixa-2">
+              <span>SEGURANÇA</span>
+              <div class="botoes-container">
+                <button class="iniciar">Iniciar</button>
+              </div>
+            </div>
+            <div class="caixa caixa-3">
+              <span>EQUIPAMENTOS</span>
+              <div class="botoes-container">
+                <button class="iniciar">Iniciar</button>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="caixa caixa-4">
+              <span>AMBIENTE</span>
+              <div class="button-iniciar">
+                <button class="iniciar">Iniciar</button>
+              </div>
+            </div>
+            <div class="caixa caixa-5">
+              <span>FINANCEIRO</span>
+              <div class="button-iniciar">
+                <button class="iniciar">Iniciar</button>
+              </div>
+            </div>
+            <div class="caixa caixa-6">
+              <span>SERVIÇOS GERAIS</span>
+              <div class="button-iniciar">
+                <button class="iniciar">Iniciar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="Sub-texto">
+        <h6 class="animated-text"> A melhor solução<br>
+           digital</h6> 
+            <p>Melhore sua rotina com soluções tecnológicas.</p>
+         <div class="botao-sub"> Saiba Mais</div>
+      </div>
+            
+        </div>
+        <div class="box-container">
+          <div class="box-1">
+              <span>Melhoria e sustentabilidade empresarial</span>
+              <button class="circle">
+                <img src="mais.icon.png" alt="Ícone de Mais">
+              </button>
+            </div>
+           </div>
+           <div class="box-2">
+            <span>Ajude a melhorar o desempenho do site</span>
+            <button class="circle">
+              <img src="mais.icon.png" alt="Ícone de Mais">
+            </button>
+            </div>
+            </div>
+         </div>
+         <div class="box-3">
+          <span>Como melhorar a comunicação no home office</span>
+          <button class="circle">
+            <img src="mais.icon.png" alt="Ícone de Mais">
+          </button>
+          </div>
+          </div>
+       </div>
+       
+       <div class="circle-container">
+          <h3>Mais de 300 Avaliações Registradas</h3>
+            <div class="circle-people">75</div>
+             <div class="circle-people">50</div>
+            <div class="circle-people">75</div>
+          <div class="circle-people">100</div>
+       </div>
+      
+
+       <div class="container-boxs">
+        <div class="row">
+          <div class="caixa-sub1">
+              <img src="aspas.png" alt="Ícone aspas">
+              <span>Melhor empresa<br> 
+              que já trabalhei.</span>
+           </div>
+          <div class="caixa-sub2">
+            <img src="aspas.png" alt="Ícone aspas">
+               <span>Para quem trabalha no escritório o ambiente é
+               bem acolhedor,os gestores de forma geral são bem
+               cortês, pagamento em dia e o VR é bom.</span>
+            </div>
+          <div class="caixa-sub3">
+            <img src="aspas.png" alt="Ícone aspas">
+               <span>Pontos positivos seriam os benefícios 
+               que tínhamos, como vale refeição, 
+               auxilio transporte, assistência 
+               médica entre outros beneficios.</span>
+           </div>
+         </div>
+       <div class="botao-sub-sub">Mais</div>
+    </div>
+
+    <footer>
+      
+    </footer>
+
+    <script>
+      // seleciona os elementos da classe circle e armazena na varia circles
+      const circles = document.querySelectorAll('.circle-people');  
+      circles.forEach((circle) => { // itera sobre todos os elementos na lista circles
+      const target = parseInt(circle.textContent); // texto obtido em cada elemento // parseInt - converte os números para inteiro
+      animateNumber(circle, target); //anima a contagem em um elemento específico até um valor alvo em loop
+      });
+
+      function animateNumber(element, target) {
+      let count = 1;  //var
+      let speed = 50; //var
+      let interval;  // var
+
+      function updateCount() {        // atualiza o valor da contagem atual em count
+      element.textContent = count;
+
+      if (count < target) {
+      count++;
+      if (count >= target - 10) {
+        // Diminuir velocidade quando estiver chegando no final
+        speed += 10;
+      }
+      } else {
+      count = 1; // Reiniciar contagem do 1 quando atingir o valor máximo
+      speed = 50; // Redefinir velocidade padrão
+      }
+
+      interval = setTimeout(updateCount, speed);  //inicia a animação da contagem.
+      }
+
+      interval = setTimeout(updateCount, speed);
+      }
+    </script>
+
+</body>
+</html>

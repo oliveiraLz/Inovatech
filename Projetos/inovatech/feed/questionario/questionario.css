@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+ * {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+ } 
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 200vh;
+    background: #172c37;
+    font-family: 'Poppins', sans-serif;
+  }
+
+header {
+    background: linear-gradient( to right, #000000, #23452c, #41A55B);
+    height: 50px;
+    align-items: center;
+    padding: 0 35px;
+    display: flex;
+   
+}
+
+.nav-item {
+  color: #ffffff;
+}
+
+imagem {  /*logo*/
+  width: 50px;
+  height: 50px;
+  margin-top: 20px;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    color: #ffffff;
+    font-size: 24px;
+    margin: 0;
+    padding: 20px 0;
+  }
+
+  #formulario {
+    background-color: #080808;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(20, 131, 35, 0.1);
+    width: 400px; /* Define uma largura para o formulário */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    margin-top: 70px; /* Adapte o valor de acordo com o espaçamento desejado */
+  }
+  
+  .pergunta {
+    display: none;
+    color: #fff;
+    font-size: 14px;
+  }
+
+  .pergunta:first-child {
+    display: block;
+  }
+
+  h2 {
+    color: #ffffff;
+    font-size: 18px;
+    margin: 0 0 10px;
+    display: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+  }
+
+  
+  input[type="radio"] {
+    margin-right: 5px;
+    color: #fff;
+  }
+
+  .proximo {
+    background-color: #118037;
+    color: #fff;
+    border: none;
+    padding: 10px 16px;
+    font-size: 14px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .proximo {
+    margin-top: 20px; /* Adapte o valor conforme desejado */
+  }
+  
+
+  .proximo:focus {
+    outline: none;
+  }
+
+  .proximo:hover {
+    background-color: #212121;
+  }
+
+  button[type="submit"] {
+    background-color: #0bb345;
+    color: #ffffff;
+    border: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    
+  }
+
+  button[type="submit"] {
+    margin-top: 20px; 
+    }
+
+  button[type="submit"]:focus {
+    outline: none;
+  }
+
+  button[type="submit"]:hover {
+    background-color: #0ab150;
+  }
+    
+    

@@ -1,0 +1,714 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+ * {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+ } 
+
+  body {
+    margin: 0;
+    padding: 0;
+    height: 200vh;
+    background: #172c37;
+  }
+
+header {
+    background: linear-gradient( to right, #000000, #23452c, #41A55B);
+    height: 50px;
+    align-items: center;
+    padding: 0 35px;
+    display: flex;
+    margin-bottom: 5rem;
+   
+}
+
+.nav-item {
+  color: #ffffff;
+}
+
+.imagem {  /*logo*/
+  width: 50px;
+  height: 50px;
+  margin-top: 20px;
+}
+
+h1 { /*Texto do inicio da página */
+    font-size: 3.0rem;
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+    padding-top: 70px;
+    margin-right: 700px;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+   
+}
+
+.feedback span{
+  font-size: 5.4rem;
+  display: flex;
+  justify-content: center;
+  color: #41A55B;
+  padding-top: -10px;
+  margin-right: 700px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2{
+  font-size: 4.8rem;
+  display: flex;
+  justify-content: center;
+  color: #41A55B;
+  padding-top: -10px;
+  margin-right: 700px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.Texto-titulo {
+  text-align: center;
+}
+
+.Texto-titulo p {
+  margin-top: 0;
+  margin-right: 850px;
+  font-size: 15px;
+}
+/* inicio dos botoes anonimo e individual */
+.botoes-container {
+  display: flex;
+}
+
+.botao {
+  position: relative;
+  color: aliceblue;
+  margin: 50px 0px 0px 80px;
+  padding: 18px 70px 19px;
+  border-radius: 30px;
+ 
+}
+.botao {
+  margin-right: 10px; /* Adiciona uma margem entre os botões */
+  background-color: #41A55B; /* Cor de fundo padrão */
+  transition: background-color 0.3s; /* Transição suave da cor de fundo */
+}
+
+.botao:hover {
+  background-color: rgb(0, 0, 0); /* Cor de fundo ao passar o mouse */
+  border: none;
+}
+
+/* fim */
+
+.imagem-container {
+  position: absolute;
+  top: 50px;
+  right: 30px;
+  margin-left: 600px;
+}
+
+.img {
+  width: 90%;
+
+}
+ 
+/* inicio das caixas de pesquisas */
+.container {
+  display: flex;
+  justify-content: center;
+  margin: 50px 20px;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+  margin-top: 150px;
+  padding-bottom: 5rem;
+ 
+}
+  
+.row {
+    display: flex;
+   
+}
+  
+.caixa {
+    width: 250px;
+    height: 250px;
+    background-color: #f0f0f0;
+    margin: 10px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caixa-4, .caixa-6 {
+  background-color: #1e6091;
+}
+
+.caixa-2 {
+  background-color: #41A55B;
+}
+ 
+.caixa span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+span {
+  font-size: 20px;
+  color: #000000;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+
+}
+
+.caixa-6 span{
+  color: #ffffff;
+
+}
+
+.caixa-4 span {
+  color: #ffffff;
+}
+
+.caixa-2  span{
+  color: #ffffff;
+}
+.caixa {
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.caixa {
+  text-align: center;
+  position: relative;
+}
+
+.iniciar {
+  background: #255f34;
+  color: #f0f0f0;
+  border-radius: 10px;
+  padding: 8px 10px 5px;
+  transition: background-color 0.3s;
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.iniciar:hover {
+  background-color: #3d9938;
+}
+
+.iniciar:active {
+  background-color: #b0f3ae;
+}
+
+.iniciar:focus {
+  outline: none;
+}
+
+h6{
+  color: #ffffff;
+  font-size: 50px;
+  margin-left: 130px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.animated-text {
+  animation: animateText 6s infinite; /* Nome da animação, duração e repetição */
+}
+
+@keyframes animateText {
+  0% {
+    opacity: 0; /* Valor inicial da propriedade */
+    transform: translateY(-10px); /* Valor inicial da propriedade */
+  }
+  40% {
+    opacity: 1; /* Valor intermediário da propriedade */
+    transform: translateY(); /* Valor intermediário da propriedade */
+  }
+  100% {
+    opacity: 1; /* Valor final da propriedade */
+    transform: translateY(10px); /* Valor final da propriedade */
+  }
+}
+
+p {
+  color: #ffffff;
+  font-size: 20px;
+  margin-left: 130px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-top: 30px;
+}
+
+/* boxs de envio de melhoria */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box-1 {
+  width: 450px;
+  height: 85px;
+  background-color: #f0f0f0;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  margin-left: 730px; /* Adiciona margem à esquerda automática para mover para o canto direito */
+  margin-top: -270px;
+  
+}
+
+.box-1 {
+  display: flex;
+  align-items: center;
+}
+
+.box-1 span {
+  font-size: 16px;
+  margin: 20px; /* Adiciona margem automática para centralizar horizontalmente */
+}
+
+.box-1 {
+  position: relative;
+}
+
+.box-1 {
+  transition: background-color 0.3s; /* Transição suave da cor de fundo */
+}
+
+.box-1:hover {
+  background-color: rgb(205, 205, 205); /* Cor de fundo ao passar o mouse */
+  border: none;
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  background-color: #41A55B;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  right: 10px; /* Posiciona o círculo no lado direito */
+  transform: translate(0, -50%);
+}
+
+.circle img {
+  width: 20px;
+  height: 20px;
+ 
+}
+
+.box-2 {
+  width: 450px;
+  height: 85px;
+  background-color:#ffffff;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  margin-left: 730px; /* Adiciona margem à esquerda automática para mover para o canto direito */
+}
+
+.box-2 {
+  display: flex;
+  align-items: center;
+}
+
+.box-2 span {
+  font-size: 16px;
+  margin: 20px; /* Adiciona margem automática para centralizar horizontalmente */
+}
+
+.box-2 {
+  position: relative;
+}
+
+.box-2 {
+  transition: background-color 0.3s; /* Transição suave da cor de fundo */
+}
+
+.box-2:hover {
+  background-color: rgb(205, 205, 205); /* Cor de fundo ao passar o mouse */
+  border: none;
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  background-color:  #41A55B;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  right: 10px; /* Posiciona o círculo no lado direito */
+  transform: translate(0, -50%);
+}
+
+.circle img {
+  width: 20px;
+  height: 20px;
+  margin: 15px;
+}
+
+.box-3 {
+  width: 450px;
+  height: 85px;
+  background-color: #f0f0f0;
+  margin-bottom: 25px;
+  border-radius: 20px;
+  margin-left: 730px; /* Adiciona margem à esquerda automática para mover para o canto direito */
+}
+
+.box-3 {
+  display: flex;
+  align-items: center;
+}
+
+.box-3 span {
+  font-size: 16px;
+  margin: 20px; /* Adiciona margem automática para centralizar horizontalmente */
+}
+
+.box-3 {
+  position: relative;
+}
+
+.box-3 {
+  transition: background-color 0.3s; /* Transição suave da cor de fundo */
+}
+
+.box-3:hover {
+  background-color: rgb(205, 205, 205); /* Cor de fundo ao passar o mouse */
+  border: none;
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  background-color: #41A55B;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  right: 20px; /* Posiciona o círculo no lado direito */
+  transform: translate(0, -50%);
+}
+
+.circle img {
+  width: 20px;
+  height: 20px;
+  margin: 15px;
+}
+
+
+.botao-sub {
+  color: #ffffff;
+  position: relative;
+  margin: 40px 0px 0px 130px;
+  padding: 15px 40px 15px;
+  border-radius: 25px;
+  white-space: nowrap;
+
+}
+.botao-sub {
+  width: 150px; /* Defina a largura desejada */
+  /* Resto do código CSS */
+}
+
+.botao-sub {
+  background-color: #41A55B; /* Cor de fundo padrão */
+  transition: background-color 0.3s; /* Transição suave da cor de fundo */
+}
+
+.botao-sub:hover {
+  background-color: rgb(0, 0, 0); /* Cor de fundo ao passar o mouse */
+  border: none;
+}
+
+/* Estilo quando o cursor está sobre o botão */
+.botao-sub:hover {
+  background-color: #3d9938;
+}
+
+/* Estilo quando o botão está ativo (clicado) */
+.botao-sub:active {
+  background-color: #b0f3ae;
+}
+
+/* Estilo quando o botão está em foco (selecionado com a tecla Tab) */
+.botao-sub:focus {
+  outline: none;
+}
+
+
+/* Estilo quando o cursor está sobre o botão */
+.circle:hover {
+  background-color: #3d9938;
+}
+
+/* Estilo quando o botão está ativo (clicado) */
+.circle:active {
+  background-color: #b0f3ae;
+}
+
+/* Estilo quando o botão está em foco (selecionado com a tecla Tab) */
+.circle:focus {
+  outline: none;
+}
+
+/* fim */
+
+
+.circle-container {
+  text-align: center;
+  padding-top: 7rem;
+  padding-bottom: 5rem;
+}
+
+.circle-people {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background-color: #41A55B;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 60px;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: white;
+}
+
+h3{
+  font-size: 30px;
+  color:#ffffff;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 70px;
+}
+  
+.container-boxs{
+  display: flex;
+  justify-content: center;
+  margin: 40px 20px;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+  margin-top: 70px;
+  margin-left: -30px;
+ 
+}
+
+.row {
+    display: flex;
+   
+}
+
+.caixa-sub1 span,
+.caixa-sub2 span,
+.caixa-sub3 span {
+  text-align: center;
+  font-size: 15px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #ffffff;
+}
+
+
+.caixa-sub1{
+    width: 300px;
+    height: 300px;
+    background-color: #1e6091;
+    margin: 10px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+.caixa-sub1 span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.caixa-sub2{
+  width: 300px;
+  height: 300px;
+  background-color:#1e6091;
+  margin: 10px;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.caixa-sub2 span {
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+.caixa-sub3{
+  width: 300px;
+  height: 300px;
+  background-color:#1e6091;
+  margin: 10px;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.caixa-sub1 {
+  position: relative;
+}
+
+.caixa-sub1 img {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px; /* Ajuste o tamanho da imagem conforme necessário */
+  height: 50px; /* Ajuste o tamanho da imagem conforme necessário */
+}
+
+.caixa-sub1 span {
+  margin-top: 60px; /* Ajuste o espaçamento entre a imagem e o texto conforme necessário */
+}
+
+.caixa-sub2 {
+  position: relative;
+}
+
+.caixa-sub2 img {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px; /* Ajuste o tamanho da imagem conforme necessário */
+  height: 50px; /* Ajuste o tamanho da imagem conforme necessário */
+
+}
+
+.caixa-sub2 span {
+  margin-top: 60px; /* Ajuste o espaçamento entre a imagem e o texto conforme necessário */
+}
+
+.caixa-sub3 {
+  position: relative;
+}
+
+.caixa-sub3 img {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-40%);
+  width: 50px; /* Ajuste o tamanho da imagem conforme necessário */
+  height: 50px; /* Ajuste o tamanho da imagem conforme necessário */
+}
+
+.caixa-sub3 span {
+  margin-top: 60px; /* Ajuste o espaçamento entre a imagem e o texto conforme necessário */
+}
+
+.container-boxs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.caixa-sub1,
+.caixa-sub2,
+.caixa-sub3 {
+  text-align: center;
+  margin: 10px;
+}
+
+.botao-sub-sub {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.botao-sub-sub {
+  color: #ffffff;
+  position: relative;
+  padding: 20px 50px 15px;
+  border-radius: 25px;
+  font-size: 25px;
+  font-weight: bold;
+}
+.botao-sub-sub {
+  width: 150px; /* Defina a largura desejada */
+  /* Resto do código CSS */
+}
+
+.botao-sub-sub {
+  background-color: #41A55B; /* Cor de fundo padrão */
+  transition: background-color 0.3s; /* Transição suave da cor de fundo */
+}
+
+.botao-sub-.botao-sub-sub {
+  background-color: rgb(0, 0, 0); /* Cor de fundo ao passar o mouse */
+  border: none;
+}
+
+/* Estilo quando o cursor está sobre o botão */
+.botao-sub-sub:hover {
+  background-color: #3d9938;
+}
+
+/* Estilo quando o botão está ativo (clicado) */
+.botao-sub-sub:active {
+  background-color: #b0f3ae;
+}
+
+/* Estilo quando o botão está em foco (selecionado com a tecla Tab) */
+.botao-sub-sub:focus {
+  outline: none;
+}
+/*deslocamento das ultimas caixas */
+.caixa-sub1,
+.caixa-sub2,
+.caixa-sub3 {
+  transition: transform 0.3s ease;
+}
+
+.caixa-sub1:hover,
+.caixa-sub2:hover,
+.caixa-sub3:hover {
+  transform: translateY(-10px);
+}
+/*fim*/
+
+footer {
+    padding-top: 3rem;
+    padding-bottom: 0.9rem;
+}
+

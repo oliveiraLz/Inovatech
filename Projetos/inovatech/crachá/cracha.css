@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+    --color-primary: #0f0e0e;
+    --color-white: #fff;
+    --color-warning: #41A55B;
+    --color-danger-variant: linear-gradient(to right, #000000, #23452c, #41A55B);
+    --color-success: #23452c;
+    --color-bg: #172c37 ;
+    --color-danger: #e63946;
+    --color-bg1: #1e6091;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#sidebar-toggle {
+    display: none;
+}
+
+#sidebar-toggle:checked ~ .sidebar {
+    left: -100%;
+}
+
+#sidebar-toggle:checked ~ .main-content header {
+    left: 0;
+    width: 100%;
+    right: 0;
+}
+
+#sidebar-toggle:checked ~ .main-content {
+    margin-left: 0;
+}
+
+.sidebar {
+    width: 280px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    padding: 1rem 1.5rem;
+    background: var(--color-primary);
+    color: var(--color-white);
+    z-index: 20;
+    transition: left 300ms;
+}
+
+.sidebar-brand {
+    height: 40px;
+}
+
+.brand-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand-icons span {
+    font-size: 1.5rem;
+    margin-left: .5rem
+}
+
+.sidebar-user {
+    margin: 1rem 0rem 1rem 0rem;
+    text-align: center;
+}
+
+.sidebar-user img {
+   width: 110px;
+   height: 110px;
+   border-radius: 50%;
+   border-left: 2px solid transparent;
+   border-right: 2px solid #41A55B;
+   border-bottom: 2px solid #0f0e0e;
+   border-top: 2px solid #0f0e0e;
+}
+
+.sidebar-user h3 {
+    font-size: 1rem;
+}
+
+.sidebar-user span {
+    font-size: .8rem;
+}
+
+.sidebar-menu {
+    margin-top: 3rem;
+}
+
+.menu-head {
+    text-transform: uppercase;
+    color: var(--color-white);
+    font-size: .75rem;
+    font-weight: 500;
+    margin-bottom: .8rem;
+}
+
+.sidebar-menu ul {
+    margin-bottom: 1.5rem;
+}
+
+.sidebar-menu li {
+    margin-bottom: .8rem;
+}
+
+.sidebar-menu li a {
+    color: var(--color-white);
+    font-size: .9rem;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-menu li a:hover {
+    background: var(--color-bg);
+    border-radius: 10px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.sidebar-menu li a span {
+    font-size: 1.5rem;
+    display: inline-block;
+    margin-right: .8rem;
+    color: var(--color-white);
+}
+
+header {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--color-danger-variant);
+    padding: 1rem 1.5rem;
+    position: fixed;
+    left: 280px;
+    width: calc(100% - 280px);
+    top: 0;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+    z-index: 20;
+    transition: left 300ms;
+}
+
+.menu-toggle label {
+    font-size: 1.5rem;
+    height: 60px;
+    width: 60px;
+    display: grid;
+    place-items: center;
+    color: var(--color-white);
+    border-radius: 50%;
+}
+
+.header-icons {
+    display: inline-block;
+    margin-left: .7rem;
+    font-size: 1.4rem;
+    color: var(--color-white)
+}
+
+.menu-toggle label:hover {
+    background: var(--color-success);
+}
+
+.main-content {
+    margin-left: 280px;
+    transition: margin-left 300ms;
+}
+
+main {
+    padding: 1.5rem;
+    background: var(--color-bg);
+    min-height: calc(100vh - 70px);
+    margin-top: 70px;
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    color: var(--color-white)
+}
+
+.header-actions button {
+    outline: none;
+    background: var(--color-success);
+    border: none;
+    padding: .6rem 1rem;
+    margin-left: 1rem;
+    border-radius: 3px;
+    font-weight: 500;
+    color: var(--color-white);
+}
+
+.header-actions button span {
+    font-size: 1.2rem;
+    margin-right: .6rem;
+}
+
+.body {
+    font-family: 'Poppins';
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    color: var(--color-white);
+    margin: 2px;
+}
+
+.botao {
+    padding: 5px;
+    background: var(--color-primary);
+    color: var(--color-white);
+    border-radius: 2px;
+    border-color: var(--color-warning);
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 500;
+    width: 60%;
+   
+}
+
+section {
+    display: flex;
+    justify-content: space-evenly;
+}
+.box {
+    background-color: var(--color-warning);
+    height: 12rem;
+    border-radius: 0px 0px 131px 0px;
+
+}
+
+#box1 {
+    height: 10rem;
+    background-color: var(--color-primary);
+    border-radius: 0px 0px 100px 0px;
+
+}
+
+.box-2 {
+    height: 30rem;
+    background-color: var(--color-primary);
+    width: 18rem;
+}
+
+.footer-box {
+    background-color: var(--color-primary);
+    height: 3rem;
+    margin-top: 16rem;
+    border-radius: 12px 12px 0px 0px;
+}
+
+.footer-box1 {
+    background-color: var(--color-warning);
+    height: 9px;
+    border-radius: 150px 150px 0px 0px;
+}
+
+#show-image {
+    height: 110px;
+    width: 110px;
+    border: 4px solid var(--color-warning);
+    border-radius: 50%;
+    text-align: center;
+    object-fit: fill;
+    overflow: hidden;
+    background: var(--color-white);
+    margin-top: 7rem;
+}
+
+.img {
+    text-align: center;
+}
+
+form {
+    width: 280px;
+    height: 280px;
+    padding: 20px;
+    position: relative;
+    top: 30px;
+}
+form input {
+    border: var(--color-white);
+    height: 32px;
+    width: 188px;
+    padding-left: 16px;
+    outline: none;
+    /* text-transform: uppercase; */
+}
+
+p {
+    margin: 3px;
+    color: var(--color-white);
+}
+
+.p1 {
+    margin: 0px;
+    font-size: 20px;
+    color: var(--color-warning);
+}
+
+.p2 {
+    margin: 0px;
+    font-size: 12px;
+}
+
+.p-box {
+    font-size: 11px;
+    margin-top: 28px;
+    margin-left: 59px;
+}
+.logo {
+    position: absolute;
+    color: #F5F5F5;
+    font-weight: 200;
+    margin: 3.3rem 0rem 0rem 5rem;
+}
+.name-box {
+    padding: 15px;
+}
+@media only screen and (max-width: 480px) {
+    section {
+        flex-direction: column-reverse;
+        justify-self: center;
+    }
+    form {
+        margin-top: 4rem;
+    }
+}
